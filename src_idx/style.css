@@ -1,0 +1,71 @@
+:root{
+    --blue: #192d35;
+    --blueVariant: #15323d;
+    --blueAccent: #2A9D8F;
+    --red: #E76F51;
+    --redAccent: #F4A261;
+    --redLightAccent: #e6d6ae;
+    --redLightAccentVariant: #3b2800;
+}
+
+body {
+    background-color: var(--redLightAccentVariant);
+    color: var(--redLightAccent);
+    height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    font-weight: 100;
+    line-height: 150%;
+}
+
+div {
+    background-color: var(--blueVariant);
+    padding: 2%;
+    margin: 2vw;
+    box-shadow: 0.1vw 0.1vw 0.4vw var(--blue);
+    border-radius: 2vw;
+}
+
+div#title {
+    background-color: var(--blueAccent);
+    color: var(--redLightAccent);
+    padding: 5%;
+    margin: 0px;
+    border-radius: 0vw;
+    text-align: center;
+}
+
+div#disclaimer {
+    background-color: var(--red);
+    color: var(--blue);
+    text-align: center;
+    border-radius: 1vw;
+    box-shadow: 0px 0px 0px;
+}
+
+h1 {
+    font-weight: bold;
+    padding-bottom: 5%;
+}
+
+a {
+    font-style: normal;
+}
+
+a {
+    text-decoration: unset;
+}
+
+a:link {
+    color: var(--redAccent);
+}
+
+a:visited {
+    color: var(--blueAccent);
+}
+
+
+
+p#subtitle {
+    font-weight:lighter;
+}
