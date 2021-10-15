@@ -1,46 +1,78 @@
 :root{
-    --blue: #192d35;
-    --blueVariant: #15323d;
-    --blueAccent: #2A9D8F;
-    --red: #E76F51;
-    --redAccent: #F4A261;
-    --redLightAccent: #e6d6ae;
-    --redLightAccentVariant: #3b2800;
-}
+    --shadowBlue: #041d25;
+    --blue: #073b4c;
+    --blueAccent: #118ab2;
+    --red: #ef476f;
+    --redAccent: #ffd166;
+    --green: #06d6a0;
+    
+    --icon-size: 50px;
 
-body {
-    background-color: var(--redLightAccentVariant);
-    color: var(--redLightAccent);
-    height: 100%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: medium;
     font-weight: 100;
     line-height: 150%;
 }
 
-div {
-    background-color: var(--blueVariant);
-    padding: 2%;
-    margin: 2vw;
-    box-shadow: 0.1vw 0.1vw 0.4vw var(--blue);
-    border-radius: 2vw;
+body {
+    background-color: var(--blue);
+    color: var(--white);
+    height: 100%;
+    margin: 0px;
+    border: 0px;
 }
 
-div#title {
-    background-color: var(--blueAccent);
-    color: var(--redLightAccent);
+
+.title-container {
+    background-image: url("voronoi.png");
+    background-size: cover;
+    background-position: center;
+    color: var(--blue);
     padding: 5%;
     margin: 0px;
-    border-radius: 0vw;
     text-align: center;
+}
+
+.page-container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.content {
+    background-color: transparent;
+    color: white;
+    padding: 2% 5% 2% 5%;
+    margin: 2vw;
+    box-shadow: 0.1vw 0.1vw 0.7vw var(--shadowBlue);
+    border-style: solid;
+    border-radius: 2vw;
+    border-width: thin;
+    border-color: var(--shadowBlue);
 }
 
 div#disclaimer {
-    background-color: var(--red);
-    color: var(--blue);
+    background-color: var(--blueAccent);
     text-align: center;
     border-radius: 1vw;
-    box-shadow: 0px 0px 0px;
+    box-shadow: 0px 0px 0.3vw var(--shadowBlue);
+}
+
+.flex-row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+}
+
+.logo {
+    width: var(--icon-size);
 }
 
 h1 {
@@ -57,14 +89,12 @@ a {
 }
 
 a:link {
-    color: var(--redAccent);
+    color: var(--green);
 }
 
 a:visited {
     color: var(--blueAccent);
 }
-
-
 
 p#subtitle {
     font-weight:lighter;
